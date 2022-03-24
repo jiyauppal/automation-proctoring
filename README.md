@@ -9,7 +9,7 @@ Project to create an automated proctoring system where the user can be monitored
  - [Vision](https://github.com/jiyauppal/face-mask-detector#Vision)
  - [Audio](https://github.com/jiyauppal/face-mask-detector#Audio)
  - [For Contributing](https://github.com/jiyauppal/face-mask-detector#For-Contributing)
- - 
+ 
 ### Technologies Used
 
 For vision:
