@@ -2,6 +2,14 @@
 
 Project to create an automated proctoring system where the user can be monitored automatically through the webcam and microphone. The project is divided into two parts: vision and audio based functionalities.
 
+## Table of Content
+
+ - [Introduction](https://github.com/jiyauppal/face-mask-detector#Auto_Practo)
+ - [Technologies Used](https://github.com/jiyauppal/face-mask-detector#Technologies_Used)
+ - [Vision](https://github.com/jiyauppal/face-mask-detector#Vision)
+ - [Audio](https://github.com/jiyauppal/face-mask-detector#Audio)
+ - [For Contributing](https://github.com/jiyauppal/face-mask-detector#For-Contributing)
+ - 
 ### Technologies Used
 
 For vision:
@@ -37,39 +45,21 @@ It is implemented in `face_landmarks.py` and is used for tracking eyes, mouth op
 ### Eye tracking
 `eye_tracker.py` is to track eyes.
 
-![eye tracking](../../blob/master/gifs/1.gif)
 
 ### Mouth Opening Detection
 `mouth_opening_detector.py` is used to check if the candidate opens his/her mouth during the exam after recording it initially. 
 
-![Mouth opening detection](../../blob/master/gifs/2.gif)
 
 ### Person counting and mobile phone detection
 `person_and_phone.py` is for counting persons and detecting mobile phones.
 
-![person counting and phone detection](../../blob/master/gifs/3.gif)
 
 ### Head pose estimation
 `head_pose_estimation.py` is used for finding where the head is facing.
 
-![head pose estimation](../../blob/master/gifs/4.gif)
 
 ### Face spoofing
 `face_spoofing.py` is used for finding whether the face is real or a photograph or image.
-
-![face spoofing](../../blob/master/gifs/5.gif)
-
-### FPS obtained
-
-Functionality | On Intel i5
---- | ---
-Eye Tracking | 7.1
-Mouth Detection | 7.2
-Person and Phone Detection | 1.3
-Head Pose Estimation | 8.5
-Face Spoofing | 6.9
-
-If you testing on a different processor a GPU consider making a pull request to add the FPS obtained on that processor.
 
 
 ## Audio
@@ -79,27 +69,8 @@ It is divided into two parts:
 
 The code for this part is available in `audio_part.py`
 
-## To do
-1. ~~Replace the HOG based descriptor by OpenCV's DNN modules Caffe model and it will also solve the issues created by side faces and occlusion.~~
-2. ~~Replace the dlib based facial landmarks with the CNN based facial landmarks as used in head_pose_detector.~~
-3. Make a better face spoofing model as the accuracy is not good currently.
-4. Use a smaller and faster model inplace of YOLOv3 that can give good FPS on a CPU.
-5. Add a vision based functionality: face recognition such that no one else replaces the candidate and gives the exam midway.
-6. Add a vision based functionality: id-card verification.
-7. ~~Update README with videos of each functionality and the FPS obtained.~~
-8. ~~Add documentation (docstring) in functions in codes.~~
+## For Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Problems
-Speech to text conversion which might not work well for all dialects.
-
-## Contributing
-
-If you have any other ideas or do any step of to do consider making a pull request . Please update the README as well in the pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](../../tree/master/LICENSE.md) file for details. However, the facial landmarks detection model is trained on non-commercial use datasets so I am not sure if that is allowed to be used for commercial purposes or not.
-
-## Like what I am doing
-<a href="https://www.buymeacoffee.com/vardan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+Please make sure to update tests as appropriate.
 
